@@ -11,15 +11,15 @@
 
 
 ### - Case how to start project
-Start Redis in redis-cli :
+Install venv on linux if not installed:
 ```shell
 sudo apt-get update
 sudo apt-get install python3-venv
 ```
 Clone Project and install dependencies:
 ```shell
-git clone https://github.com/Vitalikys/test_DocuSt.git
-cd test_DocuSt/
+git clone https://github.com/Vitalikys/Flask_my_ip_CI-CD.git
+cd Flask_my_ip_CI-CD/
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
