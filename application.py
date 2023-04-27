@@ -1,6 +1,7 @@
 import requests
 from flask import Flask, render_template
-import socket # for IP address
+import socket  # for IP address
+
 app = Flask(__name__)
 
 
@@ -15,3 +16,7 @@ def index():
         return str(e)
 
     return render_template('index.html', ip_identme=ip_identme)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
