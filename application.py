@@ -11,11 +11,12 @@ def index():
         ip_address = requests.get('https://ident.me').text
         ip_identme = ip_address.strip()
         # ip_identme = ip_address.decode('utf-8'))
+        ip = requests.get("http://checkip.amazonaws.com/").text
         print(f"Public IP address: {ip_address}")
     except Exception as e:
         return str(e)
 
-    return render_template('index.html', ip_identme=ip_identme)
+    return render_template('index.html', ip_identme=ip_identme, ip=ip)
 
 
 if __name__ == "__main__":
